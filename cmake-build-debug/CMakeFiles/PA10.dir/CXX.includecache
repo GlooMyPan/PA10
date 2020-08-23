@@ -9,16 +9,16 @@
 E:/ProjekAufgaben/PA10/artikel.cpp
 artikel.h
 E:/ProjekAufgaben/PA10/artikel.h
+fstream
+-
+cmath
+-
+iomanip
+-
 
 E:/ProjekAufgaben/PA10/artikel.h
 iostream
 -
 string
 -
-
-E:/ProjekAufgaben/PA10/main.cpp
-cstdlib
--
-artikel.h
-E:/ProjekAufgaben/PA10/artikel.h
 
