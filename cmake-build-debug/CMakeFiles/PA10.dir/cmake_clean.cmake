@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/PA10.dir/11.cpp.obj"
   "CMakeFiles/PA10.dir/artikel.cpp.obj"
   "CMakeFiles/PA10.dir/main.cpp.obj"
   "PA10.exe"

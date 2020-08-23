@@ -1,3 +1,8 @@
+//
+// Created by Xuantong Pan on 2020/8/22.
+// Matrikelnummer: 905896
+//
+
 #include "artikel.h"
 #include <fstream>
 #include <cmath> // for ceil()

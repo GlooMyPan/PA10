@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/ProjekAufgaben/PA10/11.cpp">
+			<Option target="PA10"/>
+		</Unit>
 		<Unit filename="E:/ProjekAufgaben/PA10/artikel.cpp">
 			<Option target="PA10"/>
 		</Unit>

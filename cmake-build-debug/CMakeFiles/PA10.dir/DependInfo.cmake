@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "E:/ProjekAufgaben/PA10/11.cpp" "E:/ProjekAufgaben/PA10/cmake-build-debug/CMakeFiles/PA10.dir/11.cpp.obj"
   "E:/ProjekAufgaben/PA10/artikel.cpp" "E:/ProjekAufgaben/PA10/cmake-build-debug/CMakeFiles/PA10.dir/artikel.cpp.obj"
   "E:/ProjekAufgaben/PA10/main.cpp" "E:/ProjekAufgaben/PA10/cmake-build-debug/CMakeFiles/PA10.dir/main.cpp.obj"
   )

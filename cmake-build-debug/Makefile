@@ -127,6 +127,33 @@ PA10\fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PA10.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\PA10.dir\build
 .PHONY : PA10\fast
 
+11.obj: 11.cpp.obj
+
+.PHONY : 11.obj
+
+# target to build an object file
+11.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PA10.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\PA10.dir\11.cpp.obj
+.PHONY : 11.cpp.obj
+
+11.i: 11.cpp.i
+
+.PHONY : 11.i
+
+# target to preprocess a source file
+11.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PA10.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\PA10.dir\11.cpp.i
+.PHONY : 11.cpp.i
+
+11.s: 11.cpp.s
+
+.PHONY : 11.s
+
+# target to generate assembly for a file
+11.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PA10.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\PA10.dir\11.cpp.s
+.PHONY : 11.cpp.s
+
 artikel.obj: artikel.cpp.obj
 
 .PHONY : artikel.obj
@@ -190,6 +217,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... PA10
+	@echo ... 11.obj
+	@echo ... 11.i
+	@echo ... 11.s
 	@echo ... artikel.obj
 	@echo ... artikel.i
 	@echo ... artikel.s
