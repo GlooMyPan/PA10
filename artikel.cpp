@@ -50,13 +50,13 @@ void schreibeArtikel(string artikel, size_t breite, size_t nSpalten, size_t zwRa
         else if (artikel[e] == ' ')
             artikel.erase(e, 1);
         else
-            {
+        {
             i = artikel.rfind(' ', e);
             if (i >= a)
                 artikel.replace(i, 1, e - i, ' ');
             else
                 artikel.insert(e - 1, "-");
-            }
+        }
 
     } // endfor
 
@@ -66,7 +66,7 @@ void schreibeArtikel(string artikel, size_t breite, size_t nSpalten, size_t zwRa
     size_t nZeilen = gZeilen / nSpalten;
     if (nZeilen % nSpalten != 0 && artikel.size() % spaltenBreite != 0)
         ++nZeilen;
-    int m = 0, n = gZeilen;
+    int m = 0, n = max(gZeilen, max(spaltenBreite, nZeilen));
     while (n > 0)
     {
         n /= 10;
