@@ -17,6 +17,9 @@ string leseArtikel(char const dateiName[])
     string rohArtikel = "", zeile;
     while (getline(ifs, zeile))
     {
+#ifdef _UNIX
+        zeile = zeile.erase(zeile/size()-1);
+#endif
         if (zeile.empty())
         {
             rohArtikel.erase(rohArtikel.find_last_not_of(' ') + 1);
@@ -74,6 +77,7 @@ void schreibeArtikel(string artikel, size_t breite, size_t nSpalten, size_t zwRa
     }
 
     cout << endl;
+    cout << artikel.size() << endl;
     cout << "Breite der Spalten = " << setw(m) << spaltenBreite << endl;
     cout << "Gesamzahl Zeilen   = " << setw(m) << gZeilen << endl;
     cout << "Laenge der Spalten = " << setw(m) << nZeilen << endl;
