@@ -17,8 +17,8 @@ string leseArtikel(char const dateiName[])
     string rohArtikel = "", zeile;
     while (getline(ifs, zeile))
     {
-#ifdef _UNIX
-        zeile = zeile.erase(zeile/size()-1);
+#ifdef __APPLE__
+        zeile = zeile.erase(zeile.size()-1);
 #endif
         if (zeile.empty())
         {
