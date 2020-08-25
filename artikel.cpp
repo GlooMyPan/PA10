@@ -18,13 +18,14 @@ string leseArtikel(char const dateiName[])
     while (getline(ifs, zeile))
     {
 #ifdef __APPLE__
-        zeile = zeile.erase(zeile.size()-1);
+        zeile = zeile.erase(zeile.size()-1); //in MacOS its a '\r' at the end of zeile
 #endif
         if (zeile.empty())
         {
             rohArtikel.erase(rohArtikel.find_last_not_of(' ') + 1);
             zeile = "\n\n";
-        } else if (zeile.back() == '-')
+        }
+        else if (zeile.back() == '-')
             zeile.pop_back();
         else
             zeile += ' ';
@@ -77,7 +78,6 @@ void schreibeArtikel(string artikel, size_t breite, size_t nSpalten, size_t zwRa
     }
 
     cout << endl;
-    cout << artikel.size() << endl;
     cout << "Breite der Spalten = " << setw(m) << spaltenBreite << endl;
     cout << "Gesamzahl Zeilen   = " << setw(m) << gZeilen << endl;
     cout << "Laenge der Spalten = " << setw(m) << nZeilen << endl;
@@ -101,7 +101,10 @@ void schreibeArtikel(string artikel, size_t breite, size_t nSpalten, size_t zwRa
                 subStr2.insert(nextSpace, " ");
                 nextSpace += 2;
             }
-            cout << subStr2;
+            if (subStr2.size() == spaltenBreite)
+                cout << subStr2;
+            else
+                cout << string(spaltenBreite - subStr2.size(), ' ') << subStr2 << endl;
         }
         cout << endl;
     }
